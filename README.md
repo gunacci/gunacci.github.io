@@ -1,2 +1,2 @@
 # kasiopeja
-Web sajt zamišljen za prodavnicu teleskopa Kasiopeja. 
+Web sajt za  zamišljenu prodavnicu teleskopa Kasiopeja. 
