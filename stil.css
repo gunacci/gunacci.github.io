@@ -33,7 +33,7 @@ p{
     line-height:2em;
 }
 
-cleaner{
+.cleaner{
     clear:both;
 }
 
@@ -51,9 +51,10 @@ cleaner{
     color:#ffffff;
 }
 
+
 #logo{
     transition:transform 0.5s ease;
-    
+   
 }
 
 #logo:hover{
@@ -64,8 +65,15 @@ cleaner{
 #slikaLogo{
     outline: 1px solid transparent;
     transition: transform 0.5s ease;
+    
+}
+
+#slikaLogo2{
+    outline: 1px solid transparent;
+    transition: transform 0.5s ease;
   
 }
+
 #slikaLogo:hover{
     transform:scale(1.25);
 }
@@ -84,7 +92,7 @@ cleaner{
 
 #meni ul li a{
    
-    transition: all 0.35s;
+    transition: all 0.3s;
 }
 
 #meni ul li a:hover{
@@ -108,7 +116,7 @@ cleaner{
 
 #naslov{
     background-color:rgba(0,0,0,0.75);
-   
+    width:100vw;
     margin:0 auto;
     padding:16vh 3vw;
 }
@@ -130,11 +138,26 @@ cleaner{
 .jednostavanOkvir{
     background-color:rgba(255,255,255,0.95);
     padding:9vh 4vw;
+    width:100vw;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
     align-items: center;
 
+}
+
+.jednostavanOkvir h3 {
+    color:#6C698D;
+}
+
+
+#dugmeNaProdaju{
+    display:inline-block;
+    padding:2vh 2vw;
+    border-radius:0.2em;
+    font-size:0.8em;
+    margin:2vh 0;
+    background-color: #6C698D;
 }
 
 .jednostavanOkvir:nth-child(odd){
@@ -165,10 +188,118 @@ cleaner{
     color:#ffffff;
 }
 
+#naslovSekcije{
+    width:100vw;
+    background-color:#ffffff;
+}
+
+#naslovSekcije h3{
+    color:#6C698D;
+    margin:0 0;
+}
+
+#triSekcije{
+    width:100vw;
+}
+
+
+
+#triSekcije a{
+    font-size:1em;
+}
+
+#triSekcije a:hover{
+    color:#dddddd;
+}
+
+
+
+#triSekcije h2,h3,h4{
+    text-align:center;
+    margin:2vh 2vw;
+    padding:1vh 1vw;
+    color:#ffffff;
+}
+
+#triSekcije h4{
+    font-size: 1.2em;
+    font-weight:600;
+    color:#6C698D;
+    text-decoration:underline;
+    text-decoration-color:#ffffff;
+    text-underline-offset:1vh;
+}
+
+#triSekcije ul{
+    list-style-type: none;
+    text-align:center;
+    margin:1vh 2vw;
+    padding:1vh 1vw;
+    color:#ffffff;
+}
+
+#triSekcije li{
+    margin:1vh 0;
+    font-size:1.1em;
+}
+
+.sekcijaSlika{
+    margin:0 auto;
+    width:50%;
+    transition:all 0.1s;
+}
+
+.sekcijaSlika:hover{
+    transform:scale(1.03);
+}
+
+
+#levaSekcija{
+    float:left;
+    width:33.3vw;
+    background-color:rgba(186,186,186,0.90);
+    padding:9vh 1vw;
+    transition:all 0.3s;
+}
+
+#levaSekcija:hover{
+    background-color:rgba(186,186,186,0.95);
+}
+
+
+
+#srednjaSekcija{
+    float:left;
+    width:33.3vw;
+    background-color:#6e6a6fdc;
+    padding:9vh 1vw;
+    transition:all 0.3s;
+}
+#srednjaSekcija:hover{
+    background-color:#6e6a6ff8;
+}
+
+#desnaSekcija{
+    float:left;
+    width:33.3vw;
+    background-color:rgba(0,0,0,0.90);
+    padding:9vh 1vw;
+    transition:all 0.3s;
+}
+#desnaSekcija:hover{
+    background-color:rgba(0,0,0,0.95);
+}
+
+
+#srednjaSekcija h4{
+    color:#000000;
+}
+
 
 .footer{
     color:#ffffff;
     display:flex;
+    width:100vw;
     flex-wrap:wrap;
     align-items:center;
     justify-content: space-between;
@@ -182,9 +313,17 @@ cleaner{
 
 }
 
-.footer #osnDugmici #socMreze a {
-    font-size:2em;
+.footer #osnDugmici #socMreze ul a {
+    font-size:2.5em;
     margin:0 0.79vw;    
+}
+
+.footer #osnDugmici #socMreze ul{
+    list-style-type:none;
+}
+
+.footer #osnDugmici #socMreze ul li{
+    display:inline-block;
 }
 
 #newsletter form{
@@ -216,4 +355,47 @@ cleaner{
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+}
+
+#insta{
+    transition:all 0.1s;
+}
+#insta:hover{
+    color:rgb(138, 0, 57);
+}
+
+#face{
+    transition:all 0.1s;
+}
+#face:hover{
+    color:rgb(0, 2, 138);
+}
+
+
+#yt{
+    transition:all 0.1s;
+}
+#yt:hover{
+    color:rgb(155, 0, 21);
+}
+
+#twitter{
+    transition:all 0.1s;
+}
+#twitter:hover{
+    color:rgb(0, 109, 160);
+}
+
+#sitemap{
+    transition:all 0.1s;
+}
+#sitemap:hover{
+    color:#aaaaaa;;
+}
+
+#rss{
+    transition:all 0.1s;
+}
+#rss:hover{
+    color:#f0a400;;
 }
