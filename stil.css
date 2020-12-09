@@ -6,7 +6,7 @@
 
 
 body{
-    background-image:url(planeta-pozadina-svemir.jpg);
+    background-image:url(../img/planeta-pozadina-svemir.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -64,13 +64,13 @@ p{
 
 #slikaLogo{
     outline: 1px solid transparent;
-    transition: transform 0.5s ease;
+    transition: transform 0.175s ease;
     
 }
 
 #slikaLogo2{
     outline: 1px solid transparent;
-    transition: transform 0.5s ease;
+    transition: transform 0.175s ease;
   
 }
 
@@ -108,12 +108,6 @@ p{
     color:#BBBBBB;
 }
 
-#main{
-    
-
-}
-
-
 #naslov{
     background-color:rgba(0,0,0,0.75);
     width:100vw;
@@ -138,6 +132,7 @@ p{
 .jednostavanOkvir{
     background-color:rgba(255,255,255,0.95);
     padding:9vh 4vw;
+    margin:2vh 0;
     width:100vw;
     display:flex;
     flex-wrap:wrap;
@@ -296,7 +291,7 @@ p{
 }
 
 
-.footer{
+#footerStranice{
     color:#ffffff;
     display:flex;
     width:100vw;
@@ -313,16 +308,16 @@ p{
 
 }
 
-.footer #osnDugmici #socMreze ul a {
+#footerStranice #osnDugmici #socMreze ul a {
     font-size:2.5em;
     margin:0 0.79vw;    
 }
 
-.footer #osnDugmici #socMreze ul{
+#footerStranice #osnDugmici #socMreze ul{
     list-style-type:none;
 }
 
-.footer #osnDugmici #socMreze ul li{
+#footerStranice #osnDugmici #socMreze ul li{
     display:inline-block;
 }
 
@@ -398,4 +393,194 @@ p{
 }
 #rss:hover{
     color:#f0a400;;
+}
+
+#parentGalerije{
+    width:100vw;
+    background-color:#6c698de8;
+   
+}
+
+#parentGalerije h3,h4{
+    text-align:center;
+    font-size:2em;
+}
+
+#parentGalerije h5{
+    margin:2vh 0vw 0vh 3vw;
+    text-decoration:underline;
+    text-decoration-color:#6C698D;
+    text-underline-offset:1vh;
+}
+
+#parentGalerije h5{
+    font-size:1.6em;
+    padding:2vh 0vw 0vh vw;
+}
+
+#filteri{
+    float:left;
+    width:24vw;
+    height:204vh;
+    background-color:#aaaaaa;
+    color:#ffffff;
+    font-size:1.1em;
+    margin:7vh 0 0 0;
+}
+
+#filteri form{
+    font-size:1.1em;
+    padding:2vh 0vw 0vh 5vw;
+}
+
+#filteri form input[type="checkbox"]{
+    margin:1.3vh 0;
+}
+
+
+#filteri form label{
+    transition:0.175s all;
+}
+
+#filteri form label:hover{
+    color:#6C698D;
+}
+
+
+#galerija{
+    float:left;
+    display:flex;
+    width:72vw;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    padding:3vh 0vw 0 3vw;
+}
+
+#galerija h5{
+    text-align:center;
+    color:white;
+    background-color:#6E6A6F
+}
+
+.osnovniArtikl{
+    margin:3vh 1vw;
+    width:18.5vw;
+    height:80vh;
+    background-color:#ffffff;
+    justify-content:flex-end;
+}
+
+.izdvojeniArtikl{
+    margin:3vh 1vw;
+    width:18.5vw;
+    height:90vh;
+    background-color:#ffffff;
+    justify-content:flex-end;
+}
+
+
+
+
+
+.izdvajamo{
+    background-color:#6E6A6F;
+    font-size:1.6em;
+    color:#ffffff;
+    margin:1vh 0;
+}
+
+.cena{
+    background-color:#6C698D;
+    font-size: 1.8em;
+    color:#ffffff;
+    margin:2vh 0 0 0;
+    padding:0 3vw;
+    text-align:left;
+}
+
+.korpa{
+    background-color:#ffffff;
+    font-size: 1.8em;
+    color:#6E6A6F;
+    margin:2vh 0 0 0;
+    padding:0 0.6vw;
+    text-align:right;
+}
+
+
+
+#galerija h4{
+    text-align:center;
+    color:#6C698D;
+    font-size:1.6em;
+    font-weight:800;
+}
+
+#galerija p{
+    text-align:center;
+    color:#6E6A6F;
+    font-size:1.1em;
+    font-weight:400;
+}
+
+
+#podnozjeGalerije{
+    margin:5vh 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:72vw;
+}
+
+.dugmeNaSledećuStranicuGalerije{
+    display:inline-block;
+    width:2vw;
+    height:5vh;
+    padding:1.2vh.5vh 0.5vw;
+    border-radius:0.2em;
+    font-size:1.1em;
+    margin:2vh 1vw;
+    background-color: #ffffff;
+    color: #6E6A6F;
+    text-align:center;
+    transition:all 0.185s;
+    
+}
+
+#dugmePrvaStranaGalerija{
+    background-color: #aaaaaa;
+    color:#ffffff;
+}
+
+.dugmeNaSledećuStranicuGalerije:hover{
+    cursor:pointer;
+    color:#ffffff;
+    background-color:#aaaaaa;
+    
+    
+}
+.slikaArtikal{
+    margin:0 auto;
+    padding:5vh 0 0 3vw;
+    width:90%;
+    transition:all 0.1s;
+}
+
+.slikaArtikal:hover{
+    transform:scale(1.09);
+}
+
+.donjiDeoArtikal{
+    height:6vh;
+}
+
+
+
+.paragrafArtikal{
+
+}
+
+.cenaArtikal{
+    
 }

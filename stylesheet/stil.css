@@ -219,7 +219,7 @@ p{
     text-align:center;
     margin:2vh 2vw;
     padding:1vh 1vw;
-    color:#ffffff;
+   
 }
 
 #triSekcije h4{
@@ -343,11 +343,9 @@ p{
     outline: none;
 }
 
-#prijavaNewsletter{
-    outline: none ;
-}
 
 #prijavaNewsletter{
+    outline: none ;
     padding:7px 15px; 
     background:#ffffff; 
     font-size:1.1em;
@@ -609,7 +607,7 @@ p{
 }
 
 table { 
-    width:100vw;
+    width:94vw;
     border-spacing: 10px;
     border-collapse: separate;
 }
@@ -626,4 +624,53 @@ td {
     color:red;
 }
 
+.zutiAsteriks{
+    color:yellow;
+}
 
+
+#kupovinaMain form input[type="text"]{
+    font-size:1.1em;
+    margin:0.5vh 0;
+    padding:0 1vw; 
+    color:#6E6A6F;
+    width:20vw;
+    height:4vh;
+    border:none;
+    outline: none;
+    
+}
+
+#kupovinaMain form input[type="text"]::placeholder{
+    opacity:0.4;
+}
+
+
+.formaRadio{
+    margin:0vw 2vw;
+}
+
+
+#dugmeNaruci{
+    width:40%;
+    text-align:center;
+    outline: none ;
+    padding:2vh 2vw; 
+    background:#ffffff; 
+    font-size:1.4em;
+    color:#6E6A6F;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    margin:0 0 0 5vw;
+}
+
+#dugmeNaruci:active{
+    color:#ffffff;
+    background-color:#aaaaaa;
+}
+
+#main{
+    width:100vw;
+}
