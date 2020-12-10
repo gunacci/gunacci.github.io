@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Par reči više o prodavnici, njenom vlasniku, samom imenu Kasiopeja. Naša lokacija u ulici Marka Oreškovića."/>
-        <meta name="keywords" content="teleskop, prodavnica, beograd, kvalitet, sniženje"/>
-        <title>Kasiopeja| O nama</title>
+        <meta name="description" content="Ovde možete uneti parametre o vašoj narudžbini, kako bi ono mogla biti realizovana"/>
+        <meta name="keywords" content="teleskop, prodavnica, beograd, srbija, kvalitet, sniženje, narudžbina"/>
+        <title>Kasiopeja| Narudžbina</title>
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheet/stil.css"/>
@@ -25,7 +25,7 @@
                 </ul>
             </nav>
             <div id="miniMoto">
-                <p>Vaš pouzdan izvor kvalitetnih<br/> teleskopa!</p>
+                <p class="motoAnimacija">Vaš pouzdan izvor kvalitetnih<br/> teleskopa!</p>
             </div>
         </header>
         <div id="main">
@@ -34,37 +34,43 @@
                 <div class="cleaner"></div>
             </div>
             <div id="kupovinaMain">
-                <table>  
-                    <tr>
-                        <td>Ime:<span class="crveniAsteriks">*</span></td>
-                        <td></td>
-                        <td>Adresa:</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Prezime:</td>
-                        <td></td>
-                        <td>Telefon:</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td></td>
-                        <td>Način isporuke:</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><span class="crveniAsteriks">*</span>-  obavezan unos podatka u polje</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    
-                </table>
-               </div>
+                <form method="GET" action="/action.php">
+                    <table>  
+                        <tr>
+                            <td>Ime:<span class="crveniAsteriks">*</span></td>
+                            <td><input type="text" id="korIme" name="Korisnicko ime" placeholder="Radenko"/></td>
+                            <td>Adresa:<span class="crveniAsteriks">*</span></td>
+                            <td><input type="text" id="adr" name="Adresa" placeholder="Karađorđeva 57"/></td>
+                        </tr>
+                        <tr>
+                            <td>Prezime:<span class="crveniAsteriks">*</span></td>
+                            <td><input type="text" id="preIme" name="Korisnicko prezime" placeholder="Subotić"/></td>
+                            <td>Telefon:<span class="crveniAsteriks">*</span></td>
+                            <td><input type="text" id="telBroj" name="Korisnicki telefon" placeholder="060/00-0000" maxlength="12"/></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text" id="email" name="Email" placeholder="korisničkiMejl&#64;gmail&#46;com" maxlength="320"/></td>
+                            <td>Način plaćanja:<span class="crveniAsteriks">*</span></td>
+                            <td><input type="radio" id="pouzece" name="payment"/><span class="formaRadio">Po pouzeću</span><br/>
+                                <input type="radio" id="racun" name="payment"/><span class="formaRadio">Preko računa</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Broj računa:<span class="zutiAsteriks">*</span></td>
+                            <td><input type="text" id="racunBroj" name="Racun broj" placeholder="250-00000000000-00" maxlength="30"/></td>
+                        </tr>
+                        <tr>
+                            <td><span class="crveniAsteriks">*</span>-  obavezan unos podatka u polje<br/><span class="zutiAsteriks">*</span>-  uslovljen unos podatka u polje</td>
+                            <td></td>
+                            <!-- izbrao sam tip reset, jer briše podatke u formi, pa bi korisniku delovalo lepše,  trebalo bi submit-->
+                            <td colspan="2"><input type="reset" name="Naruci" id="dugmeNaruci" value="Naruči"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
-
-
         <footer id="footerStranice">
             <div id="osnInfo">
                 <p>Adresa: Marka Oreškovića 57 11000, Beograd<br/>Kontakt telefon: 064/914-76-18<br/>Copyright Kasiopeja&#169;  Marko Marković 6/20</p>
@@ -85,7 +91,7 @@
                         <input type="text" name="e-mail"  placeholder="   ime&#46;prezime&#46;&#64;gmail&#46;com" id="footerInput" maxlength="320"/>
                         <br/>
                         <!-- izbrao sam tip reset, jer briše podatke u formi za mejl, trebalo bi submit-->
-                        <input type="reset" name="Prijava" id="prijavaNewsletter" value="Prijava na newsletter" />
+                        <input type="reset" name="Prijava" id="prijavaNewsletter" value="Prijava na newsletter"/>
                     </form>
                 </div>
             </div>
