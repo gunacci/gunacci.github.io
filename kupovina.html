@@ -12,9 +12,9 @@
         <link rel="icon" href="favicon.png" sizes="16x16" type="image/png"/>
     </head>
     <body>
-        <header id="headerStranice">
+        <header>
             <div id="logo">
-                <a href="index.html"><img src="img/logo.png" alt="logo-sajta-teleskop" width="25%" id="slikaLogo"/></a>
+                <a href="index.html"><img src="img/logo.png" alt="logo-sajta-teleskop" id="slikaLogo"/></a>
             </div>
             <nav id="meni">
                 <ul>
@@ -34,25 +34,25 @@
                 <div class="cleaner"></div>
             </div>
             <div id="kupovinaMain">
-                <form method="GET" action="/action.php">
+                <form method="GET" action="">
                     <table>  
                         <tr>
                             <td>Ime:<span class="crveniAsteriks">*</span></td>
-                            <td><input type="text" id="korIme" name="Korisnicko ime" placeholder="Radenko"/></td>
+                            <td><input type="text" id="korIme" name="Korisnicko ime" placeholder="Radenko" required/></td>
                             <td>Adresa:<span class="crveniAsteriks">*</span></td>
-                            <td><input type="text" id="adr" name="Adresa" placeholder="Karađorđeva 57"/></td>
+                            <td><input type="text" id="adr" name="Adresa" placeholder="Karađorđeva 57" required/></td>
                         </tr>
                         <tr>
                             <td>Prezime:<span class="crveniAsteriks">*</span></td>
-                            <td><input type="text" id="preIme" name="Korisnicko prezime" placeholder="Subotić"/></td>
+                            <td><input type="text" id="preIme" name="Korisnicko prezime" placeholder="Subotić" required/></td>
                             <td>Telefon:<span class="crveniAsteriks">*</span></td>
-                            <td><input type="text" id="telBroj" name="Korisnicki telefon" placeholder="060/00-0000" maxlength="12"/></td>
+                            <td><input type="text" id="telBroj" name="Korisnicki telefon" placeholder="060/00-0000" maxlength="12" required/></td>
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td><input type="text" id="email" name="Email" placeholder="korisničkiMejl&#64;gmail&#46;com" maxlength="320"/></td>
+                            <td><input type="email" id="email" name="email" placeholder="korisnickoIme&#64gmail&#46com"/></td>
                             <td>Način plaćanja:<span class="crveniAsteriks">*</span></td>
-                            <td><input type="radio" id="pouzece" name="payment"/><span class="formaRadio">Po pouzeću</span><br/>
+                            <td><input type="radio" id="pouzece" name="payment" required/><span class="formaRadio">Po pouzeću</span><br/>
                                 <input type="radio" id="racun" name="payment"/><span class="formaRadio">Preko računa</span></td>
                         </tr>
                         <tr>
@@ -62,36 +62,34 @@
                             <td><input type="text" id="racunBroj" name="Racun broj" placeholder="250-00000000000-00" maxlength="30"/></td>
                         </tr>
                         <tr>
-                            <td><span class="crveniAsteriks">*</span>-  obavezan unos podatka u polje<br/><span class="zutiAsteriks">*</span>-  uslovljen unos podatka u polje</td>
+                            <td><span class="crveniAsteriks">*</span>-  obavezan unos podatka u polje<br/><span class="zutiAsteriks">*</span>-  ukoliko je izabran tip plaćanja putem računa</td>
                             <td></td>
-                            <!-- izbrao sam tip reset, jer briše podatke u formi, pa bi korisniku delovalo lepše,  trebalo bi submit-->
-                            <td colspan="2"><input type="reset" name="Naruci" id="dugmeNaruci" value="Naruči"/></td>
+                            <td colspan="2"><input type="submit" name="Naruci" id="dugmeNaruci" value="Naruči"/></td>
                         </tr>
                     </table>
                 </form>
             </div>
         </div>
-        <footer id="footerStranice">
+        <footer>
             <div id="osnInfo">
                 <p>Adresa: Marka Oreškovića 57 11000, Beograd<br/>Kontakt telefon: 064/914-76-18<br/>Copyright Kasiopeja&#169;  Marko Marković 6/20</p>
             </div>
             <div id="osnDugmici">
                 <div id="socMreze">
                     <ul>
-                        <li><a href="#" id="insta"> <i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" id="face"> <i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" id="twitter"> <i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" id="yt"> <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/kasiopeja_kraljica_teleskopa" id="insta"> <i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100059068071282" id="face"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/KasiopejaTelesk" id="twitter"> <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCRUCNHJuZ4-7l90MVMOA0RQ?view_as=subscriber" id="yt"> <i class="fa fa-youtube"></i></a></li>
                         <li><a href="#" id="sitemap"> <i class="fa fa-sitemap"></i></a></li>
                         <li><a href="#" id="rss"> <i class="fa fa-rss"></i></a></li>
                     </ul>
                 </div>
                 <div id="newsletter">
-                    <form method="GET" action="/action.php">
-                        <input type="text" name="e-mail"  placeholder="   ime&#46;prezime&#46;&#64;gmail&#46;com" id="footerInput" maxlength="320"/>
+                    <form method="GET" action="">
+                        <input type="email" name="e-mail"  placeholder="ime&#46;prezime&#64;gmail&#46;com" id="footerInput" maxlength="320"/>
                         <br/>
-                        <!-- izbrao sam tip reset, jer briše podatke u formi za mejl, trebalo bi submit-->
-                        <input type="reset" name="Prijava" id="prijavaNewsletter" value="Prijava na newsletter"/>
+                        <input type="submit" name="Prijava" id="prijavaNewsletter" value="Prijava na newsletter"/>
                     </form>
                 </div>
             </div>
