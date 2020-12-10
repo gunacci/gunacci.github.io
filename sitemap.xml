@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://gunacci.github.io/index.html</loc>
+		<lastmod>2020-12-10</lastmod>
+		<changefrequency>monthly</changefrequency>
+		<priority>0.92</priority>
+	</url>
+	<url>
+		<loc>https://gunacci.github.io/prodavnica.html</loc>
+		<lastmod>2020-12-10</lastmod>
+		<changefrequency>weekly</changefrequency>
+		<priority>0.95</priority>
+	</url>
+	<url>
+		<loc>https://gunacci.github.io/oNama.html</loc>
+		<lastmod>2020-12-10</lastmod>
+		<changefrequency>monthly</changefrequency>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://gunacci.github.io/autor.html</loc>
+		<lastmod>2020-12-10</lastmod>
+		<changefrequency>monthly</changefrequency>
+		<priority>0.65</priority>
+	</url>
+	<url>
+		<loc>https://gunacci.github.io/kupovina.html</loc>
+		<lastmod>2020-12-10</lastmod>
+		<changefrequency>monthly</changefrequency>
+		<priority>0.89</priority>
+	</url>
+</urlset>
