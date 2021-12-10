@@ -41,12 +41,15 @@ p{
 
 header{
     display:flex;
+    position: fixed;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items:center;
     background-color:#6C698D;
     width:100vw;
     padding:2vh 3vw;
+    border-bottom:2px solid #6E6A6F ;
+    
 }
 header p{
     font-size:1.7em;
@@ -121,8 +124,9 @@ header p{
 #naslov{
     background-color:rgba(0,0,0,0.75);
     width:100vw;
+    height:75vh;
     margin:0 auto;
-    padding:16vh 3vw;
+    padding:32vh 3vw;
 }
 
 #naslov h1{
@@ -212,6 +216,7 @@ header p{
 
 #triSekcije{
     width:100vw;
+    height:105vh;
 }
 
 
@@ -275,6 +280,7 @@ header p{
     background-color:rgba(186,186,186,0.90);
     padding:9vh 1vw;
     transition:all 0.3s;
+    height:100%;
 }
 
 #levaSekcija:hover{
@@ -288,6 +294,7 @@ header p{
     width:33.3vw;
     background-color:#6e6a6fdc;
     padding:9vh 1vw;
+    height:100%;
     transition:all 0.3s;
 }
 #srednjaSekcija:hover{
@@ -297,6 +304,7 @@ header p{
 #desnaSekcija{
     float:left;
     width:33.3vw;
+    height:100%;
     background-color:rgba(0,0,0,0.90);
     padding:9vh 1vw;
     transition:all 0.3s;
@@ -491,7 +499,7 @@ footer #osnDugmici #socMreze ul li{
 .osnovniArtikl{
     margin:3vh 1vw;
     width:18.5vw;
-   
+    height:80vh;
     background-color:#ffffff;
     justify-content:flex-end;
 }
@@ -499,7 +507,7 @@ footer #osnDugmici #socMreze ul li{
 .izdvojeniArtikl{
     margin:3vh 1vw;
     width:18.5vw;
-    
+    height:80vh;
     background-color:#ffffff;
     justify-content:flex-end;
 }
@@ -529,6 +537,7 @@ footer #osnDugmici #socMreze ul li{
     margin:2vh 0 0 0;
     padding:0 3vw;
     text-align:left;
+    width:58%;
 }
 
 .korpa{
@@ -579,6 +588,20 @@ footer #osnDugmici #socMreze ul li{
     border-radius:0.2em;
     font-size:1.1em;
     margin:2vh 1vw;
+    background-color: #ffffff;
+    color: #6E6A6F;
+    text-align:center;
+    transition:all 0.185s;
+    
+}
+.dugmeMeni{
+    display:none;
+    width:15vw;
+    cursor:pointer;
+    padding:2.4vh 1vw 2.4vh 1vw;
+    border-radius:0.05em;
+    font-size:1.5em;
+    margin:4vh 2vw;
     background-color: #ffffff;
     color: #6E6A6F;
     text-align:center;
@@ -697,3 +720,74 @@ td {
     width:100vw;
 }
 
+@media only screen and (max-width: 768px){
+
+    body{font-size:10px;}
+    #triSekcije{
+      height:70vh;
+      
+      
+    }
+    
+    #galerija{
+        font-size:14px;
+    }
+    .izdvajamo{
+        font-size:14px;
+    }
+    #triSekcije h3,h4{
+        font-size:28px;
+    }
+    #levaSekcija{
+        width:100vw;
+        height:100vh;
+    }
+    #desnaSekcija{
+        width:100vw;
+        height:100vh;
+    }
+    #srednjaSekcija{
+        width:100vw;
+        height:100vh;
+    }
+    .dugmeNaSledećuStranicuGalerije{
+        width:4vw;
+    }
+    .dugmeMeni{display:inline-block;}
+    nav ul{display: none;}
+
+}
+    @media only screen and (max-width: 480px){
+        .izdvojeniArtikl{
+            width:80vw;
+            height:90vh;
+        }
+        .osnovniArtikl{
+            width:80vw;
+            height:80vh;
+        }
+        .dugmeMeni{width:40vw;}
+
+        body{font-size:8px;}
+        
+        #triSekcije h3,h4{
+          font-size:20px;
+        }
+    }
+    @media only screen and (min-width: 1280px){
+        .izdvojeniArtikl{
+            height:80vh;
+        }
+        .osnovniArtikl{
+            height:70vh;
+        }
+        .korpa{
+         font-size:1.5em;
+                }}
+    @media only screen and (min-width: 1920px){
+        .cena{
+            font-size:3em;
+        }
+        .korpa{
+            font-size:2.5em;
+                   }}
