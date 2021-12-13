@@ -23,12 +23,24 @@
                     <li><a href="oNama.html">O nama</a></li>
                     <li><a href="autor.html">Autor</a></li>
                 </ul>
-                <span class="dugmeMeni">MENI <i class="fa fa-bars"></i></span>
             </nav>
             <div id="miniMoto">
                 <p class="motoAnimacija">Vaš pouzdan izvor kvalitetnih<br/> teleskopa!</p>
             </div>
+            <div class="dropdown">
+                <span onclick="ucitajBocniMeni()" class="dropbtn">MENI <i class="fa fa-caret-down"></i></i></span>
+                <div id="myDropdown" class="dropdown-content">
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="prodavnica.html">Prodavnica</a></li>
+                        <li><a href="oNama.html">O nama</a></li>
+                        <li><a href="autor.html">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
+        <div id="iskacuciMeni">
+        </div>
         <div id="main">
             <div id="naslov">
                 <h1>O autoru</h1>
@@ -69,5 +81,11 @@
                 </div>
             </div>
         </footer>
+        <div id="modalniRoditelj">
+            <div id="modalniKontejner">
+            </div>
+        </div>
+        <script  type="text/javascript" src="js/jKveri.js"></script>
+        <script  type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -12,7 +13,7 @@ body{
     background-attachment:fixed;
     color:#000000;
     font-size:14px;
-    font-family: 'Lora', serif,'Verdana';
+    font-family: 'Lora', sans-serif,'Verdana';
     margin:0;
     width:100vw;
     overflow-x: hidden
@@ -42,12 +43,14 @@ p{
 header{
     display:flex;
     position: fixed;
+    z-index: 1;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items:center;
     background-color:#6C698D;
     width:100vw;
     padding:2vh 3vw;
+    box-shadow: 0px 2px 0px 0px rgba(255,255,255,0.6);
     border-bottom:2px solid #6E6A6F ;
     
 }
@@ -261,6 +264,7 @@ header p{
 }
 
 .sekcijaSlika{
+    
     margin:0 auto;
     width:50%;
     transition:all 0.1s;
@@ -594,7 +598,7 @@ footer #osnDugmici #socMreze ul li{
     transition:all 0.185s;
     
 }
-.dugmeMeni{
+.dropbtn{
     display:none;
     width:15vw;
     cursor:pointer;
@@ -720,43 +724,95 @@ td {
     width:100vw;
 }
 
-@media only screen and (max-width: 768px){
 
-    body{font-size:10px;}
-    #triSekcije{
-      height:70vh;
-      
-      
-    }
-    
-    #galerija{
-        font-size:14px;
-    }
-    .izdvajamo{
-        font-size:14px;
-    }
-    #triSekcije h3,h4{
-        font-size:28px;
-    }
-    #levaSekcija{
-        width:100vw;
-        height:100vh;
-    }
-    #desnaSekcija{
-        width:100vw;
-        height:100vh;
-    }
-    #srednjaSekcija{
-        width:100vw;
-        height:100vh;
-    }
-    .dugmeNaSledećuStranicuGalerije{
-        width:4vw;
-    }
-    .dugmeMeni{display:inline-block;}
-    nav ul{display: none;}
-
+.dropdown-content ul{
+ list-style-type:none;
 }
+  
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #dddddd;
+}
+  
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+ 
+.dropdown-content {
+    display: none;
+    width:48vw;
+    height:100vh;
+    opacity:0.975;
+    padding: 0 6vw;
+    position: fixed;
+    top:0;
+    left:60vw;
+    background-color: rgb(108, 105, 141);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  
+.dropdown-content a {
+    color: #dddddd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  
+.dropdown-content a:hover {
+text-shadow: 3px 3px 3px rgba(255,255,255,0.6);
+color:#ffffff;
+}
+  
+  
+  .show {display:block;}
+
+    @media only screen and (max-width: 768px){
+
+        body{font-size:10px;}
+        #triSekcije{
+        height:70vh;
+        
+        
+        }
+        
+        #galerija{
+            font-size:14px;
+        }
+        .izdvajamo{
+            font-size:14px;
+        }
+        #triSekcije h3,h4{
+            font-size:28px;
+        }
+        #levaSekcija{
+            width:100vw;
+            height:100vh;
+        }
+        #desnaSekcija{
+            width:100vw;
+            height:100vh;
+        }
+        #srednjaSekcija{
+            width:100vw;
+            height:100vh;
+        }
+        .dropbtn{
+            display:inline-block;
+        }
+        .dugmeNaSledećuStranicuGalerije{
+            width:4vw;
+        }
+        .dugmeMeni{display:inline-block;}
+        nav ul{display: none;}
+        
+
+    }
     @media only screen and (max-width: 480px){
         .izdvojeniArtikl{
             width:80vw;
@@ -790,4 +846,80 @@ td {
         }
         .korpa{
             font-size:2.5em;
-                   }}
+        }}
+
+
+#modalniRoditelj{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(255,255,255,0.65); 
+}        
+#modalniRoditelj2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(255,255,255,0.1); 
+}   
+#modalniKontejner{
+    position:fixed;
+    top:20vh;
+    margin:0 0 0 30vw;
+    width:60vw;
+    height:70vh;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    
+}
+#modalniKontejner2{
+    position:fixed;
+    margin:0 0 0 30vw;
+    top:20vh;
+    width:60vw;
+    height:70vh;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    
+}
+
+
+#modalnaSlika{
+    object-fit: contain;
+    width:75%;
+    max-width:40vw;
+    max-height: 70vh;
+}
+
+#modalniTekst{
+    position:fixed;
+    margin:0 0 0 15vw;
+    top:85vh;
+    display:none;
+}
+                      
+#modalniStil{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.4em;
+    font-style:bold;
+    margin-top:5vh;
+    text-transform: uppercase;
+    color:#6C698D;
+   }
+
+   
