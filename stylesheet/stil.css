@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, a {
     color:#ffffff;
    }
 
+
 a{  
     text-decoration:none;
     font-size:2.5em;
@@ -457,6 +458,7 @@ footer #osnDugmici #socMreze ul li{
 
 #filteri{
     float:left;
+    border-radius: 0.72%;
     width:24vw;
     background-color:#aaaaaa;
     color:#ffffff;
@@ -546,11 +548,12 @@ footer #osnDugmici #socMreze ul li{
 
 .korpa{
     background-color:#ffffff;
-    font-size: 1.8em;
+    font-size: 4.8em;
     color:#6E6A6F;
     margin:2vh 0 2vh 4vw;
     text-align:end;
     transition:all  0.275s; 
+    cursor: pointer;
 }
 
 .korpa:hover{
@@ -838,14 +841,14 @@ color:#ffffff;
             height:70vh;
         }
         .korpa{
-         font-size:1.5em;
+         font-size:4.8em;
                 }}
     @media only screen and (min-width: 1920px){
         .cena{
             font-size:3em;
         }
         .korpa{
-            font-size:2.5em;
+            font-size:4.8em;
         }}
 
 
@@ -861,18 +864,7 @@ color:#ffffff;
     background-color: rgb(0,0,0); 
     background-color: rgba(255,255,255,0.65); 
 }        
-#modalniRoditelj2{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(255,255,255,0.1); 
-}   
+
 #modalniKontejner{
     position:fixed;
     top:20vh;
@@ -887,17 +879,41 @@ color:#ffffff;
 }
 #modalniKontejner2{
     position:fixed;
-    margin:0 0 0 30vw;
-    top:20vh;
+    margin:0 20vw 0 20vw;
+    top:12.5vh;
     width:60vw;
     height:70vh;
+    border-radius: 0.72%;
     display:none;
-    justify-content: center;
-    align-items: center;
     z-index:2;
-    
+    background-color:rgba(108, 105, 141, 0.99);
+    padding:9vh 4vw;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
+#modalniKontejner2 h4{
+    margin-bottom: 7.5vh;
+    font-style:bold;
+    font-size:3.9em;
+}
+
+#modalniKontejner2 .korpa{
+    padding:2.1vw;
+    font-size:2.4em;
+}
+
+#modalniKontejner2 .cena{
+    margin:8vh 0 0 0;
+    font-size:3.1em;
+}
+
+#modalniKontejner2 p{
+    font-size:1.6em;
+    font-color:white;
+}
 
 #modalnaSlika{
     object-fit: contain;
@@ -906,7 +922,17 @@ color:#ffffff;
     max-height: 70vh;
 }
 
-#modalniTekst{
+#modalnaSlika2{
+    border-radius: 0.72%;
+    margin-top: 2.5vh;
+    margin-left:1.9vw;
+    object-fit: contain;
+    width:85%;
+    max-width:20vw;
+    max-height:50vh;
+}
+
+#modalniTekstKontejner{
     position:fixed;
     margin:0 0 0 15vw;
     top:85vh;
